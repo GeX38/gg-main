@@ -3,7 +3,7 @@ package com.example.gg
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
-import com.example.gg.R
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,10 +11,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Проверка, что фрагмент уже не добавлен во избежание дублирования
         if (savedInstanceState == null) {
+            val currentUser = FirebaseAuth.getInstance().currentUser
+            val initialFragment = if (currentUser != null) EventsFragment() else SignInFragment()
+
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, MainFragment())
+                .replace(R.id.fragment_container, initialFragment)
                 .commit()
         }
     }
@@ -28,3 +30,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+

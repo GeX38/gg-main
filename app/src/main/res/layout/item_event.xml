@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:layout_margin="8dp"
+    android:elevation="4dp">
 
-    <TextView
-        android:id="@+id/eventTitleTextView"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Event Title"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/eventDescriptionTextView"
-        android:layout_below="@id/eventTitleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event Description" />
+        <TextView
+            android:id="@+id/eventTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/eventDateTextView"
-        android:layout_below="@id/eventDescriptionTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event Date" />
+        <TextView
+            android:id="@+id/eventDescriptionTextView"
+            android:layout_below="@id/eventTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Description" />
 
-    <TextView
-        android:id="@+id/eventTimeTextView"
-        android:layout_below="@id/eventDateTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event Time" />
+        <TextView
+            android:id="@+id/eventDateTextView"
+            android:layout_below="@id/eventDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Date" />
 
-    <TextView
-        android:id="@+id/eventOrganizerTextView"
-        android:layout_below="@id/eventTimeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Event Organizer" />
+        <TextView
+            android:id="@+id/eventTimeTextView"
+            android:layout_below="@id/eventDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Time" />
 
-    <Button
-        android:id="@+id/joinButton"
-        android:layout_below="@id/eventOrganizerTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Join" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/eventOrganizerTextView"
+            android:layout_below="@id/eventTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Organizer" />
+
+        <Button
+            android:id="@+id/joinButton"
+            android:layout_below="@id/eventOrganizerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
