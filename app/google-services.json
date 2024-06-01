@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "189763786513",
+    "project_id": "gg-help12",
+    "storage_bucket": "gg-help12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189763786513:android:7dc7762bdb74c9a77a5eb0",
+        "android_client_info": {
+          "package_name": "com.example.gg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189763786513-jksmia2o9g2hn2g07me0egijptt22l2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gg",
+            "certificate_hash": "08514670d3fdb02e0f56a665092de703a4342494"
+          }
+        },
+        {
+          "client_id": "189763786513-8f6tqn2bfmpen7de5a8d2q6apncvjbv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPIEncOwpgwD1OYnyrwl_T6AX7Q2B8njs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189763786513-8f6tqn2bfmpen7de5a8d2q6apncvjbv1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
